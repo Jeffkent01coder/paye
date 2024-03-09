@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm Your Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <script
+      src="https://kit.fontawesome.com/your-fontawesome-kit-id.js"
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body class="font-sans">
+    <div class="flex h-screen">
+      <section
+        class="w-90p sm:w-full lg:w-2/5 pt-8 sm:pt-16 px-4 lg:px-4 ml-0 lg:ml-4">
+        <div class="max-w-[500px] mx-auto lg:mx-0">
+          <div class="flex justify-between items-center w-full px-2 lg:w-full">
+            <a href="/">
+              <svg viewBox="0 0 123.7 23.3" fill="#333" width="120">
+                <path
+                  d="M91.3 1.7V12c0 3.6 1.5 5 4.1 5s4.1-1.5 4.1-5V1.7h4.3v10.4c0 5.5-3.1 8.5-8.4 8.5-5.2 0-8.4-3-8.4-8.5V1.7zm-59.8 0l8.3 18.6h-4.5l-1.7-4H25l-1.7 4h-4.4l8.3-18.6zm49.7 0v3.5h-9.7v4.9H80v3.5h-8.5v6.8h-4.3V1.7zm32.8 0v15.1h9.7v3.5h-14V1.7zM8.1 1.7c4.9 0 8.1 2.5 8.1 6.8 0 4.1-3.1 6.7-8.1 6.7H4.3v5.2H0V1.7zm47 9.9l6.3 8.7h-4.1c-.6 0-1.2-.2-1.6-.7l-.1-.1-2.3-3.2c-.5-.8-.5-1.8 0-2.6l.1-.2zM29.3 6l-2.9 7.1h5.9zM7.9 5.2H4.3v6.5h3.5c2.7 0 4-1.2 4-3.2s-1.3-3.3-3.9-3.3zm39-3.5c.7 0 1.2.2 1.6.7l.1.1 1.2 1.7c.5.7.5 1.7.1 2.4l-.1.1-1.7 2.4-5.4-7.5z"></path>
+                <path
+                  d="M63.1 0L41.5 23.2c-.2.3-.7-.1-.4-.4L56.7.8c.4-.5 1-.8 1.7-.8z"
+                  fill="#00a5ef"></path>
+              </svg>
+            </a>
+            <div class="flex gap-1 border-2 m-2 p-1 rounded-md items-center">
+              <svg
+                class="text-gray-400 text-xl"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 6l3 1m0 0l-3 9a5.97 5.97 0 0 0 3.5 7.18M21 10l-3 1m3-1l-3 9a5.97 5.97 0 0 1-3.5-7.18"></path>
+              </svg>
+              <div class="flex items-center justify-between text-xl">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  class="text-gray-600"
+                  height="1em"
+                  viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12 22q-2.05 0-3.875-.788t-3.187-2.15q-1.363-1.362-2.15-3.187T2 12q0-2.075.788-3.887t2.15-3.175Q6.3 3.575 8.124 2.788T12 2q2.075 0 3.888.788t3.174 2.15q1.363 1.362 2.15 3.175T22 12q0 2.05-.788 3.875t-2.15 3.188q-1.362 1.362-3.175 2.15T12 22m0-2.05q.65-.9 1.125-1.875T13.9 16h-3.8q.3 1.1.775 2.075T12 19.95m-2.6-.4q-.45-.825-.787-1.713T8.05 16H5.1q.725 1.25 1.813 2.175T9.4 19.55m5.2 0q1.4-.45 2.488-1.375T18.9 16h-2.95q-.225.95-.562 1.838T14.6 19.55M4.25 14h3.4q-.075-.5-.112-.987T7.5 12q0-.525.038-1.012T7.65 10h-3.4q-.125.5-.187.988T4 12q0 .525.063 1.013T4.25 14m5.4 0h4.7q.075-.5.113-.987T14.5 12q0-.525-.038-1.012T14.35 10h-4.7q-.075.5-.112.988T9.5 12q0 .525.038 1.013T9.65 14m6.7 0h3.4q.125-.5.188-.987T20 12q0-.525-.062-1.012T19.75 10h-3.4q.075.5.113.988T16.5 12q0 .525-.038 1.013T16.35 14m-.4-6h2.95q-.725-1.25-1.812-2.175T14.6 4.45q.45.825.788 1.713T15.95 8M10.1 8h3.8q-.3-1.1-.775-2.075T12 4.05q-.65.9-1.125 1.875T10.1 8m-5 0h2.95q.225-.95.563-1.838T9.4 4.45Q8 4.9 6.912 5.825T5.1 8" />
+                </svg>
+                <select class="border-none text-lg text-geay-600">
+                  <option value="">English</option>
+                  <option value="">Chinese</option>
+                  <option value="">Noones</option>
+                  <option value="">France</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="px-2 mt-6 lg:m-0">
+            <h3 class="text-2xl font-bold text-purple-800">
+              Confirm Your Login
+            </h3>
+            <p class="text-sm mt-2 text-gray-500">
+              Open Google Authenticator or Authy and enter the code you see
+              there below.
+            </p>
+            <p class="text-blue-500">Trouble logging in?</p>
+            <div id="otp" class="flex flex-row text-center mt-5">
+              <!-- Equivalent HTML for OTP inputs with Tailwind CSS styling -->
+              <input
+                id="otp-0"
+                class="m-2 border border-gray-500 h-10 w-10 text-center form-control rounded focus:outline-none focus:border-[#0052cc]"
+                type="text"
+                maxlength="1"
+                style="border: 1px solid gray" />
+              <input
+                id="otp-1"
+                class="m-2 border border-gray-500 h-10 w-10 text-center form-control rounded focus:outline-none focus:border-[#0052cc]"
+                type="text"
+                maxlength="1"
+                style="border: 1px solid gray" />
+              <input
+                id="otp-2"
+                class="m-2 border border-gray-500 h-10 w-10 text-center form-control rounded focus:outline-none focus:border-[#0052cc]"
+                type="text"
+                maxlength="1"
+                style="border: 1px solid gray" />
+              <input
+                id="otp-3"
+                class="m-2 border border-gray-500 h-10 w-10 text-center form-control rounded focus:outline-none focus:border-[#0052cc]"
+                type="text"
+                maxlength="1"
+                style="border: 1px solid gray" />
+              <input
+                id="otp-4"
+                class="m-2 border border-gray-500 h-10 w-10 text-center form-control rounded focus:outline-none focus:border-[#0052cc]"
+                type="text"
+                maxlength="1"
+                style="border: 1px solid gray" />
+              <input
+                id="otp-5"
+                class="m-2 border border-gray-500 h-10 w-10 text-center form-control rounded focus:outline-none focus:border-[#0052cc]"
+                type="text"
+                maxlength="1"
+                style="border: 1px solid gray" />
+            </div>
+
+            <p class="text-blue-500 mt-2 cursor-pointer">Resend code</p>
+            <div class="flex gap-2 mt-4 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                class="text-xl text-blue-500"
+                height="1em"
+                viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M12.727 3.687a1 1 0 1 0-1.454-1.374l-8.5 9a1 1 0 0 0 0 1.374l8.5 9.001a1 1 0 1 0 1.454-1.373L4.875 12z" />
+              </svg>
+              <p class="text-blue-500 cursor-pointer">Back to login</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-purple-800 w-3/5 h-full flex items-center justify-center relative overflow-hidden hidden lg:flex">
+        <img src="./pax.webp" alt="Placeholder Image" class="z-10" />
+      </section>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
